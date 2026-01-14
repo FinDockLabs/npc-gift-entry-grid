@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>67.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>GE Findock Payment Wrapper</masterLabel>
+    <description>Lightweight wrapper around the Findock Payment LWC for use within Gift Entry Grid contexts.</description>
+</LightningComponentBundle>

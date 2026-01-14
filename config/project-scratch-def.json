@@ -1,0 +1,28 @@
+{
+  "orgName": "GiftEntryPOC Preview",
+  "edition": "Enterprise",
+  "hasSampleData": false,
+  "language": "en_US",
+  "features": [
+    "Communities",
+    "ContactsToMultipleAccounts",
+    "EnableSetPasswordInApi",
+    "PersonAccounts",
+    "Fundraising"
+  ],
+  "settings": {
+    "lightningExperienceSettings": {
+      "enableS1DesktopEnabled": true
+    },
+    "mobileSettings": {
+      "enableS1EncryptedStoragePref2": false
+    },
+    "communitiesSettings": {
+      "enableNetworksEnabled": true
+    },
+    "securitySettings": {
+      "enableRequireHttpsConnection": true
+    }
+  },
+  "release": "preview"
+}
