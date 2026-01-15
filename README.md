@@ -1,6 +1,7 @@
 # FinDock Payment Component wrapper for NPC Gift Entry Grid
 
 Please note: this project uses the new-ish Gift Entry Grid functionality. For the previous flow-based Gift Entry functionality see: https://github.com/FinDockLabs/findock-single-gift-entry
+Please note2: this project is meant as implementation inspiration. It by no means contains production-ready code. Please adjust to your specific business process and architecture.
 
 This project provides a basic wrapper for the FinDock Payment Component (Virtual Terminal / MOTO) to be used in the Gift Entry Grid.
 The FinDock Payment Component is used to authorize & capture Credit Card and Direct Debit payments by an agent from Salesforce.
@@ -19,6 +20,8 @@ Wrapper LWC Component
 - The FinDock Payment Component provides the primary functionality.
 - The Wrapper Screen Flow is used to show the FinDock Paymetn Component to the user, inject configuration into the component and provide a way to extend its functionality (e.g. orchestration across payment processors).
 - The Wrapper LWC allows for the Screen Flow with Payment Component to be added to a Gift Entry Grid template
+
+The Components and Flow work with both Gift Transactions and Gift Commitments. Currently the Flow prioritises Gift Commitments if both are entered in Gift Entry, but this can be adjusted by changing a formula.
 
 ## Configuration
 
