@@ -3,6 +3,11 @@
     <apiVersion>66.0</apiVersion>
     <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
     <environments>Default</environments>
+    <formulas>
+        <name>componentInputRecordId</name>
+        <dataType>String</dataType>
+        <expression>IF(ISBLANK({!giftCommitmentId}), {!giftTransactionId}, {!giftCommitmentId})</expression>
+    </formulas>
     <interviewLabel>Gift Entry Grid FinDock Payment Component Wrapper {!$Flow.CurrentDateTime}</interviewLabel>
     <label>Gift Entry Grid FinDock Payment Component Wrapper</label>
     <processMetadataValues>
@@ -24,13 +29,6 @@
         </value>
     </processMetadataValues>
     <processType>Flow</processType>
-    <variables>
-        <name>giftTransactionId</name>
-        <dataType>String</dataType>
-        <isCollection>false</isCollection>
-        <isInput>true</isInput>
-        <isOutput>false</isOutput>
-    </variables>
     <screens>
         <name>FinDock_Payment_Component_Screen</name>
         <label>FinDock Payment Component Screen</label>
@@ -46,7 +44,7 @@
             <inputParameters>
                 <name>recordId</name>
                 <value>
-                    <elementReference>giftTransactionId</elementReference>
+                    <stringValue>{!componentInputRecordId}</stringValue>
                 </value>
             </inputParameters>
             <inputParameters>
@@ -90,4 +88,18 @@
         </connector>
     </start>
     <status>Active</status>
+    <variables>
+        <name>giftCommitmentId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>giftTransactionId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
 </Flow>
