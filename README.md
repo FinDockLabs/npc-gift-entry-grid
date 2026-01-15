@@ -6,6 +6,7 @@
 # FinDock Payment Component wrapper for NPC Gift Entry Grid
 
 Please note: this project uses the new-ish Gift Entry Grid functionality. For the previous flow-based Gift Entry functionality see: https://github.com/FinDockLabs/findock-single-gift-entry
+
 Please note2: this project is meant as implementation inspiration. It by no means contains production-ready code. Please adjust to your specific business process and architecture.
 
 This project provides a basic wrapper for the FinDock Payment Component (Virtual Terminal / MOTO) to be used in the Gift Entry Grid.
@@ -13,6 +14,7 @@ The FinDock Payment Component is used to authorize & capture Credit Card and Dir
 The Gift Entry Grid feature is part of the Salesforce Nonprofit Cloud (NPC).
 
 For more information about the FinDock Payment Component, see: https://docs.findock.com/payments/configuring-findock-moto
+
 For more information about Salesforce Nonprofit Cloud, see: https://help.salesforce.com/s/articleView?id=sfdo.fundraising_get_started.htm&type=5
 
 ## Structure
