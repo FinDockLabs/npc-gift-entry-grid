@@ -36,16 +36,16 @@ The Components and Flow work with both Gift Transactions and Gift Commitments. C
 1. Install and Configure FinDock, including the FinDock for Fundraising Source Connector and at least one Processor that is supported by the Payment Component (pay special attention to permissions: have the FinDock Service Agent permission set group assigned)
 2. Deploy the LWC and Screen Flow
 3. Add the Wrapper LWC to a Gift Entry Grid Template:
-    a. Go to Salesforce Setup
-    b. Go to Feature Settings > Fundraising > Gift Entry
-    c. Edit an existing Template or press "New Template"
-    d. In the settings on the right hand side, scroll down to "Gift Entry Post Processing"
-    e. Press "Add Step"
-    f. Under "Lightning Web Component Name" select GE FinDock Payment Wrapper
-    g. Add the following conditions (depending on what processor / methods you use): Payment Method Equals CreditCard; Payment Method Equals ACH Direct Debit
-    h. If you selected multiple conditions, select "Any filter is true" under "Show component when:"
-    i. Save the Post-processing settings
-    j. Save the Template settings
+    -  Go to Salesforce Setup
+    - Go to Feature Settings > Fundraising > Gift Entry
+    - Edit an existing Template or press "New Template"
+    - In the settings on the right hand side, scroll down to "Gift Entry Post Processing"
+    - Press "Add Step"
+    - Under "Lightning Web Component Name" select GE FinDock Payment Wrapper
+    - Add the following conditions (depending on what processor / methods you use): Payment Method Equals CreditCard; Payment Method Equals ACH Direct Debit
+    - If you selected multiple conditions, select "Any filter is true" under "Show component when:"
+    - Save the Post-processing settings
+    - Save the Template settings
 4. Set the new template as Default
 
 
