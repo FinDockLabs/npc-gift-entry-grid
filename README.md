@@ -20,9 +20,11 @@ For more information about Salesforce Nonprofit Cloud, see: https://help.salesfo
 ## Structure
 The project consists of 3 layers:
 
+```
 Wrapper LWC Component
- |_Wrapper Screen Flow
-    |_FinDock Payment Component
+    \_Wrapper Screen Flow
+        \_FinDock Payment Component
+```
 
 - The FinDock Payment Component provides the primary functionality.
 - The Wrapper Screen Flow is used to show the FinDock Paymetn Component to the user, inject configuration into the component and provide a way to extend its functionality (e.g. orchestration across payment processors).
